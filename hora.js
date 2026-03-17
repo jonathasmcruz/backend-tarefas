@@ -11,8 +11,11 @@ console.log(`Após hora extra (horasTrabalhadas++): ${HorasTrabalhadas}h`);
 HorasTrabalhadas--;
 console.log(` Após saída antecipada: ${HorasTrabalhadas}h`);
 
-HorasTrabalhadas--
-console.log(`Após saída antecipadas (horasTrabalhadas--): ${horasTrabalhadas}h`);
+HorasTrabalhadas--;
+console.log(`Após saída antecipadas (HorasTrabalhadas--): ${HorasTrabalhadas}h`);
 
 let taxaSistema = 15;
-let pagamentoTotal = (horasTrabalhadas * valorPorHora) - taxaSistema;
+let pagamentoTotal = (HorasTrabalhadas * valorPorHora) - taxaSistema;
+
+console.log("\n--- Fechamento ---");
+console.log(`Total a receber por ${HorasTrabalhadas}h: R$ ${pagamentoTotal}`)
