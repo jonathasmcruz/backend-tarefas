@@ -8,3 +8,5 @@ function verificarPar(numero) {
     if (numero % 2 === 0)
         return
 }
+
+console.log(verificarPar(8));
