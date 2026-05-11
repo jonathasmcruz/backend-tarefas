@@ -42,5 +42,9 @@ function exibirPedido(listaPedido){
     console.log(`TOTAL: R$ ${calcularTotaL(listaPedido)}`);
 }
 
+let subtotal = calcularTotal(listaPedido)
+let totalFinal = calcularcomDesconto(subtotal, clienteObj);
+console.log('TOTAL FINAL: R$ {totalFinal}')
+
 exibirCardapio(cardapio);
 exibirPedido(pedido);
